@@ -442,6 +442,41 @@ Source: http://www.linear.com .. 4062fa.pdf</description>
 <text x="-2" y="4" size="1.016" layer="25">&gt;NAME</text>
 <text x="-2" y="2" size="1.016" layer="27">&gt;VALUE</text>
 </package>
+<package name="PTC1206">
+<description>&lt;b&gt;Ceramic Chip Capacitor KEMET 1206 reflow solder&lt;/b&gt;&lt;p&gt;
+Metric Code Size 3216</description>
+<wire x1="-1.525" y1="0.75" x2="1.525" y2="0.75" width="0.1016" layer="51"/>
+<wire x1="1.525" y1="-0.75" x2="-1.525" y2="-0.75" width="0.1016" layer="51"/>
+<smd name="1" x="-1.5" y="0" dx="1.5" dy="2" layer="1"/>
+<smd name="2" x="1.5" y="0" dx="1.5" dy="2" layer="1"/>
+<text x="-1.6" y="1.1" size="1.016" layer="25">&gt;NAME</text>
+<text x="-1.6" y="-2.1" size="1.016" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.6" y1="-0.8" x2="-1.1" y2="0.8" layer="51"/>
+<rectangle x1="1.1" y1="-0.8" x2="1.6" y2="0.8" layer="51"/>
+</package>
+<package name="PTC1210">
+<description>&lt;b&gt;Ceramic Chip Capacitor KEMET 1210 reflow solder&lt;/b&gt;&lt;p&gt;
+Metric Code Size 3225</description>
+<wire x1="-1.525" y1="1.175" x2="1.525" y2="1.175" width="0.1016" layer="51"/>
+<wire x1="1.525" y1="-1.175" x2="-1.525" y2="-1.175" width="0.1016" layer="51"/>
+<smd name="1" x="-1.5" y="0" dx="1.5" dy="2.9" layer="1"/>
+<smd name="2" x="1.5" y="0" dx="1.5" dy="2.9" layer="1"/>
+<text x="-1.6" y="1.55" size="1.016" layer="25">&gt;NAME</text>
+<text x="-1.6" y="-2.575" size="1.016" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.6" y1="-1.25" x2="-1.1" y2="1.25" layer="51"/>
+<rectangle x1="1.1" y1="-1.25" x2="1.6" y2="1.25" layer="51"/>
+</package>
+<package name="SMA_DIODE">
+<wire x1="-2.3" y1="1.5" x2="2.3" y2="1.5" width="0.127" layer="21"/>
+<wire x1="2.3" y1="1.5" x2="2.3" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="2.3" y1="-1.5" x2="-2.3" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-2.3" y1="-1.5" x2="-2.3" y2="1.5" width="0.127" layer="21"/>
+<smd name="A" x="-2.02" y="0" dx="1.4" dy="1.64" layer="1"/>
+<smd name="K" x="2.02" y="0" dx="1.4" dy="1.64" layer="1"/>
+<text x="-2.4" y="2" size="1.016" layer="25">&gt;Name</text>
+<text x="-2.4" y="-2.8" size="1.016" layer="27">&gt;Value</text>
+<rectangle x1="1" y1="-1.5" x2="1.6" y2="1.5" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="L70">
@@ -561,6 +596,29 @@ Source: http://www.linear.com .. 4062fa.pdf</description>
 <pin name="2" x="5.08" y="0" visible="off" length="short" rot="R180"/>
 <pin name="G1" x="-2.54" y="-7.62" visible="off" length="short" rot="R90"/>
 <pin name="G2" x="2.54" y="-7.62" visible="off" length="short" rot="R90"/>
+</symbol>
+<symbol name="PTC">
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-0.635" x2="2.54" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-0.635" x2="2.54" y2="0.635" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0.635" x2="-2.54" y2="0.635" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-1.905" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-1.905" x2="2.54" y2="1.905" width="0.254" layer="94"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short"/>
+<pin name="2" x="5.08" y="0" visible="off" length="short" rot="R180"/>
+</symbol>
+<symbol name="DIODE_TVS_UNI">
+<wire x1="-1.27" y1="-5.08" x2="1.27" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-5.08" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-1.27" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-1.57" y1="-2.84" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.57" y2="-2.24" width="0.254" layer="94"/>
+<text x="2.54" y="-2.54" size="1.6764" layer="95">&gt;Name</text>
+<text x="2.54" y="-5.08" size="1.6764" layer="96">&gt;Value</text>
+<pin name="K" x="0" y="0" visible="off" length="short" rot="R270"/>
+<pin name="A" x="0" y="-7.62" visible="off" length="short" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -687,6 +745,47 @@ Source: http://www.linear.com .. 4062fa.pdf</description>
 <connect gate="G$1" pin="2" pad="3"/>
 <connect gate="G$1" pin="G1" pad="2"/>
 <connect gate="G$1" pin="G2" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PTC_FUSE">
+<gates>
+<gate name="G$1" symbol="PTC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="1206" package="PTC1206">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1210" package="PTC1210">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DIODE_TVS_SMA">
+<gates>
+<gate name="G$1" symbol="DIODE_TVS_UNI" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SMA_DIODE">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="K" pad="K"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -15949,7 +16048,7 @@ Source: http://www.taiwansemi.com .. 5205_0409c.pdf</description>
 <part name="MICROSD" library="SparkFun" deviceset="USD-SOCKET" device="NEW"/>
 <part name="MIC" library="qyx-misc" deviceset="MJ-2135" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
-<part name="DC_IN" library="con-qyx" deviceset="DC_JACK" device=""/>
+<part name="DC_IN" library="con-qyx" deviceset="DC_JACK" device="" value="5-40V"/>
 <part name="M1" library="microphon" deviceset="ELECTRET_MICROPHON-" device="WM-62PC/62PK" value="ELECTRET_MICROPHON-WM-62PC/62PK">
 <attribute name="PN" value="PMOF-6027PN-42UQ"/>
 </part>
@@ -16163,6 +16262,10 @@ Source: http://www.taiwansemi.com .. 5205_0409c.pdf</description>
 <part name="C58" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
 <part name="JP10" library="pinhead" deviceset="PINHD-1X4" device=""/>
 <part name="GND68" library="supply1" deviceset="GND" device=""/>
+<part name="U$2" library="qyx-misc" deviceset="PTC_FUSE" device="1210"/>
+<part name="GND69" library="supply1" deviceset="GND" device=""/>
+<part name="D5" library="qyx-misc" deviceset="DIODE_TVS_SMA" device="" value="40V"/>
+<part name="GND70" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -16254,10 +16357,6 @@ to maintain consistency.</text>
 <wire x1="309.88" y1="185.42" x2="7.62" y2="185.42" width="0.1524" layer="97"/>
 <wire x1="7.62" y1="185.42" x2="7.62" y2="363.22" width="0.1524" layer="97"/>
 <text x="10.16" y="358.14" size="1.778" layer="97">TODO area</text>
-<text x="124.46" y="238.76" size="1.778" layer="97">TODO: add overvoltage and
-overcurrent protection (PTC
-fuse) and connect it to the
-main DC/DC converter input.</text>
 <text x="180.34" y="238.76" size="1.778" layer="97">TODO: a suitable USB-&gt;serial
 converter chip has to be
 selected and connected to
@@ -16285,6 +16384,10 @@ with the SPI flash.</text>
 <wire x1="688.34" y1="340.36" x2="688.34" y2="299.72" width="0.1524" layer="97"/>
 <wire x1="688.34" y1="299.72" x2="627.38" y2="299.72" width="0.1524" layer="97"/>
 <wire x1="627.38" y1="299.72" x2="627.38" y2="340.36" width="0.1524" layer="97"/>
+<wire x1="-17.78" y1="17.78" x2="50.8" y2="17.78" width="0.1524" layer="97"/>
+<wire x1="50.8" y1="17.78" x2="50.8" y2="-17.78" width="0.1524" layer="97"/>
+<wire x1="50.8" y1="-17.78" x2="-17.78" y2="-17.78" width="0.1524" layer="97"/>
+<wire x1="-17.78" y1="-17.78" x2="-17.78" y2="17.78" width="0.1524" layer="97"/>
 </plain>
 <instances>
 <instance part="LCD1" gate="G$1" x="254" y="210.82"/>
@@ -16314,7 +16417,7 @@ with the SPI flash.</text>
 <instance part="MICROSD" gate="G$1" x="193.04" y="-30.48"/>
 <instance part="MIC" gate="G$1" x="726.44" y="-48.26" rot="R180"/>
 <instance part="GND11" gate="1" x="713.74" y="-58.42"/>
-<instance part="DC_IN" gate="G$1" x="127" y="228.6"/>
+<instance part="DC_IN" gate="G$1" x="-10.16" y="5.08"/>
 <instance part="M1" gate="G$1" x="711.2" y="-91.44" smashed="yes">
 <attribute name="PN" x="718.82" y="-91.44" size="1.778" layer="96" display="off"/>
 </instance>
@@ -16528,6 +16631,10 @@ with the SPI flash.</text>
 <instance part="C58" gate="G$1" x="375.92" y="5.08"/>
 <instance part="JP10" gate="A" x="673.1" y="320.04"/>
 <instance part="GND68" gate="1" x="662.94" y="309.88"/>
+<instance part="U$2" gate="G$1" x="17.78" y="5.08"/>
+<instance part="GND69" gate="1" x="7.62" y="-7.62"/>
+<instance part="D5" gate="G$1" x="25.4" y="2.54"/>
+<instance part="GND70" gate="1" x="25.4" y="-7.62"/>
 </instances>
 <busses>
 <bus name="R1_DIO[0..5],R2_DIO[0..5],R1_RESET,R2_RESET,R12_SCK,R12_MISO,R12_MOSI,R1_NSS,R2_NSS,R1_LED1,R1_LED2,R2_LED1,R2_LED2">
@@ -17082,6 +17189,20 @@ with the SPI flash.</text>
 <pinref part="GND68" gate="1" pin="GND"/>
 <wire x1="670.56" y1="320.04" x2="662.94" y2="320.04" width="0.1524" layer="91"/>
 <wire x1="662.94" y1="320.04" x2="662.94" y2="312.42" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="DC_IN" gate="G$1" pin="O"/>
+<pinref part="GND69" gate="1" pin="GND"/>
+<wire x1="0" y1="0" x2="7.62" y2="0" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="0" x2="7.62" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="DC_IN" gate="G$1" pin="OSW"/>
+<wire x1="0" y1="2.54" x2="7.62" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="2.54" x2="7.62" y2="0" width="0.1524" layer="91"/>
+<junction x="7.62" y="0"/>
+</segment>
+<segment>
+<pinref part="D5" gate="G$1" pin="A"/>
+<pinref part="GND70" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -17877,6 +17998,15 @@ with the SPI flash.</text>
 <pinref part="C21" gate="G$1" pin="1"/>
 <wire x1="269.24" y1="139.7" x2="269.24" y2="142.24" width="0.1524" layer="91"/>
 <junction x="269.24" y="142.24"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="2"/>
+<pinref part="D5" gate="G$1" pin="K"/>
+<wire x1="22.86" y1="5.08" x2="25.4" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="5.08" x2="25.4" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="5.08" x2="33.02" y2="5.08" width="0.1524" layer="91"/>
+<junction x="25.4" y="5.08"/>
+<label x="33.02" y="5.08" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="VDD45" class="0">
@@ -18929,6 +19059,13 @@ with the SPI flash.</text>
 <pinref part="JP10" gate="A" pin="2"/>
 <wire x1="670.56" y1="322.58" x2="650.24" y2="322.58" width="0.1524" layer="91"/>
 <label x="650.24" y="322.58" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="N$53" class="0">
+<segment>
+<pinref part="DC_IN" gate="G$1" pin="C"/>
+<pinref part="U$2" gate="G$1" pin="1"/>
+<wire x1="0" y1="5.08" x2="12.7" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
